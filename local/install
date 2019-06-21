@@ -9,7 +9,7 @@ else
   # In a virtualenv if file pyvenv.cfg exists one level above the python
   # executable.  (This is better than checking the VIRTUAL_ENV variable, which
   # may not be set.)
-  prefix="$(readlink -f "$(dirname "$(which python)")/..")"
+  prefix="$(greadlink -f "$(dirname "$(which python)")/..")"
   if [[ ! -f "$prefix/pyvenv.cfg" ]]; then
     echo 'must install in an active python virtualenv or conda env'
     exit 1
