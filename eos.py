@@ -11,7 +11,7 @@ try:
 except ImportError:
     from scipy.interpolate import InterpolatedUnivariateSpline as CubicSpline
 
-import frzout
+import frzout_for_eos as frzout
 
 
 __doc__ = """
