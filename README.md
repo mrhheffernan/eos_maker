@@ -17,7 +17,14 @@ bash local/install  # To install the `frzout` package
 
 ## For production
 
+### UrQMD NOT the PDG particle list
 python3 eos.py --res-width-off --species=urqmd --Tmax 1.0 --write-bin eos_urqmd.bin --music_output_format
+
+### UrQMD with PDGv3.3+ particle list
+python3 eos.py --res-width-off --species=all --Tmax 1.0 --write-bin eos_urqmdv3.3.bin --music_output_format
+
+### SMASH
+python3 eos.py --res-width-off --species=smash --Tmax 1.0 --write-bin eos_smash.bin --music_output_format
 
 ## Just to see the output
 
